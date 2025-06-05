@@ -1,4 +1,4 @@
-//variable
+//variable, le : string c'est pour typer pour être sur qu'il renvoi bien une string
 const maString: string = "coucou";
 
 
@@ -14,7 +14,7 @@ console.log("name de la fonction => ", name);
 
 
 //object basique
-interface VoitureInterface {
+interface VoitureInterface { //enfaite c'est une sorte de contrat, genre il vérifie que c'est bien de type string, number etc...
     toto: string,
     marque: string,
     modele: string,
@@ -30,7 +30,7 @@ type VoitureInterface = {
     couleur: string
 } */
 
-interface NewInterface extends VoitureInterface { //pour ajouter un truc a VoitureInterface ici coucou
+interface NewInterface extends VoitureInterface { //pour ajouter un truc a VoitureInterface ici c'est coucou qui sera donc de type string
     coucou: string
 }
 
