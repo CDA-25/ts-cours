@@ -1,0 +1,11 @@
+services:
+  mytodo:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: mytodo:dev
+    container_name: mytodo_dev
+    volumes:
+      - ./:/app
+    ports:
+    - "3000:3000"
