@@ -1,0 +1,12 @@
+services:
+  cours:
+    build:
+      context: .
+      target: dev
+      dockerfile: Dockerfile
+    image: cours:dev
+    container_name: cours_dev
+    volumes:
+      - ./:/app
+    ports:
+      - "4000:4000"
