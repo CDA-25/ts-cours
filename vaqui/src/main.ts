@@ -29,7 +29,7 @@ button.addEventListener("click" ,function() {
 
         let checkbox = document.createElement("input")
         checkbox.type = "checkbox"
-        checkbox.id = `ticktickDiv.${i}`
+        checkbox.id = `ticktickDiv.${i+1}`
         checkbox.name = "test"
         checkbox.value = "off"
         listElement.textContent = (i+1) +  " : " + liste[i]
