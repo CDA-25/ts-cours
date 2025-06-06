@@ -1,0 +1,12 @@
+services:
+  dockeralone:
+    build:
+      context: .
+      target: dev
+      dockerfile: Dockerfile
+    image: dockeralone:dev
+    container_name: dockeralone_dev
+    volumes:
+      - ./:/app
+    ports:
+      - "4200:4200"
