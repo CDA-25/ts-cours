@@ -14,3 +14,8 @@ On peux au debut telecharger (copier coller) les fichier
     - entrypoint.sh
     - vite.config.ts
 ps: pensez à modifier le port pour eviter les conflits
+
+
+Pour arreter le docker : docker compose down (pour arreter le docker en etant dans le dossier du docker)
+Pour afficher les images : docker images
+pour supprimer l'images : docker rm id_de_l_image
